@@ -1,0 +1,9 @@
+/Users/bkila/Desktop/QuotingDojo/bin/Debug/netcoreapp1.1/QuotingDojo.deps.json
+/Users/bkila/Desktop/QuotingDojo/bin/Debug/netcoreapp1.1/QuotingDojo.runtimeconfig.json
+/Users/bkila/Desktop/QuotingDojo/bin/Debug/netcoreapp1.1/QuotingDojo.runtimeconfig.dev.json
+/Users/bkila/Desktop/QuotingDojo/bin/Debug/netcoreapp1.1/QuotingDojo.dll
+/Users/bkila/Desktop/QuotingDojo/bin/Debug/netcoreapp1.1/QuotingDojo.pdb
+/Users/bkila/Desktop/QuotingDojo/obj/Debug/netcoreapp1.1/QuotingDojo.csproj.CoreCompileInputs.cache
+/Users/bkila/Desktop/QuotingDojo/obj/Debug/netcoreapp1.1/QuotingDojo.AssemblyInfo.cs
+/Users/bkila/Desktop/QuotingDojo/obj/Debug/netcoreapp1.1/QuotingDojo.dll
+/Users/bkila/Desktop/QuotingDojo/obj/Debug/netcoreapp1.1/QuotingDojo.pdb

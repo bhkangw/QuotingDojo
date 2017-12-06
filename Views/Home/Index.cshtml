@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QuotingDojo</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container"><br>
+        <div class="jumbotron">
+            <h1>Welcome to QuotingDojo</h1>
+             @if(ViewBag.Error != null){
+            <b style="color:red;">@ViewBag.Error</b>
+            }
+            <form action="/quotes" method="POST">
+                <p>Your Name: </p><input name="author" class="form-control" type="text"><br>
+                <p>Your Quote: </p><textarea name="content" cols="20" rows="3" class="form-control"></textarea><br>
+                <input type="submit" value="Add my Quote!" class="btn btn-primary">
+                <a href="/quotes" class="btn btn-danger">Skip to Quotes</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
