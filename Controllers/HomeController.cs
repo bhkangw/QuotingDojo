@@ -4,12 +4,18 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
-using DbConnection;
 
 namespace QuotingDojo.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly DbConnector _dbConnector;
+
+        public HomeController(DbConnector connect)
+        {
+            _dbConnector = connect;
+        }
+
         [HttpGet]
         [Route("")]
         public IActionResult Index()
@@ -31,7 +37,7 @@ namespace QuotingDojo.Controllers
 
             //Add the quote to the database
             string query = $"INSERT INTO quotes (author, content, created_at) VALUES ('{author}', '{content}', NOW())";
-            DbConnector.Execute(query);
+            _dbConnector.Execute(query);
             return RedirectToAction("Quotes");
         }
 
@@ -41,7 +47,7 @@ namespace QuotingDojo.Controllers
         {
             //Get all quotes
             string query = "SELECT * FROM quotes ORDER BY created_at desc";
-            var quotes = DbConnector.Query(query);
+            var quotes = _dbConnector.Query(query);
 
             ViewBag.quotes = quotes;
             return View();
